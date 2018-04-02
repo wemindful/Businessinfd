@@ -24,7 +24,7 @@ public class VCR {
 		//instance.setDatapath(tessDataFolder.getParent());
 		//如果未将tessdata放在根目录下需要指定绝对路径
 		//instance.setDatapath("E:/2018中国软件杯/businessinformationdiscern/tessdata");
-		instance.setLanguage("chi_sim");
+		instance.setLanguage("eng");
 		// 这里对图片黑白处理,增强识别率.这里先通过截图,截取图片中需要识别的部分
 //BufferedImage textImage = ImageHelper.convertImageToGrayscale(ImageHelper.getSubImage(panel.image, startX, startY, endX, endY));
 // 图片锐化,自己使用中影响识别率的主要因素是针式打印机字迹不连贯,所以锐化反而降低识别率
