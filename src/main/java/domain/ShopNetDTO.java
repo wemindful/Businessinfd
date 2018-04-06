@@ -10,7 +10,7 @@ public class ShopNetDTO {
     @ExcelField(name = "企业名称")
     private String companyName;
 
-    @ExcelField(name = "企业注册号")
+    @ExcelField(name = "企业注册号",width = 20)
     private String companyRegisterId;
 
     public ShopNetDTO(String companyName, String companyRegisterId) {

@@ -24,7 +24,7 @@
                         <archive>
                             <manifest>
                                 <!-- main 函数所在的包名 -->
-                                <mainClass>main.A</mainClass>
+                                <mainClass>main.BsdMain</mainClass>
                                 <addClasspath>true</addClasspath>
                                 <classpathPrefix>lib/</classpathPrefix>
                             </manifest>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>com.xuxueli</groupId>
             <artifactId>xxl-excel</artifactId>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </dependency>
     </dependencies>
 </project>

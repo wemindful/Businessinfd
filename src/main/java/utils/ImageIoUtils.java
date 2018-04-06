@@ -134,10 +134,12 @@ public class ImageIoUtils {
         Imgproc.cvtColor(srcmat, destmat, Imgproc.COLOR_RGB2GRAY);
     }
     public static void threshold(Mat srcmat,Mat destmat){
-        Imgproc.threshold(srcmat, destmat, 32, 255, Imgproc.THRESH_BINARY);
+        //而二值化处理
+        Imgproc.threshold(srcmat, destmat, 150, 255, Imgproc.THRESH_BINARY);
     }
     public static void erode(Mat srcmat,Mat destmat){
-        Mat element = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(3, 3));
+        //定义腐蚀块的大小
+        Mat element = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(2, 2));
         Imgproc.erode(srcmat,destmat,element);
     }
 

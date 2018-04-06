@@ -47,18 +47,20 @@ public class OpenCvUtils {
                 e.printStackTrace();
             }
         }else {
-            File[] files = root.listFiles();
+            File[] files = root.listFiles();//"Z:\\code\\";
             for (File file : files) {
                   Mat mat = Imgcodecs.imread(file.getPath());
                   Mat mat1 = clearWatermark(mat);
                   Imgcodecs.imwrite(dstPath+file.getName(),mat1);
-            }
-            /*for (int i = 0; i < files.length; i++) {//Z:\TEMP\
-               // System.out.println(dstPath+i+".bmp");
+                  System.out.println(dstPath+file.getName());
+            } //文件目录不能带有中文
+           /* for (int i = 0; i < files.length; i++) {//Z:\TEMP\
+                System.out.println(dstPath+i+".bmp");
                 Mat mat = Imgcodecs.imread(dstPath+i+".bmp");
                 Mat mat1 = clearWatermark(mat);
-                System.out.println(dstPath+i+".bmp");
-                Imgcodecs.imwrite(dstPath+i+".bmp",mat1);
+                //System.out.println(dstPath+i+".bmp");
+               // Imgcodecs.imwrite(dstPath+i+".bmp",mat1);
+                System.out.println(Imgcodecs.imwrite(dstPath+i+".bmp",mat1));
             }*/
         }
 

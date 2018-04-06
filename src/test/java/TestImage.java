@@ -1,13 +1,11 @@
-import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 import org.junit.Test;
-import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.highgui.HighGui;
+import org.opencv.core.Size;
 import org.opencv.imgcodecs.Imgcodecs;
-import sun.net.www.content.image.png;
+import org.opencv.imgproc.Imgproc;
 import utils.ImageIoUtils;
 import utils.OpenCvUtils;
 import utils.TesseractUtil;
@@ -15,11 +13,8 @@ import utils.TesseractUtil;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
-import java.util.List;
 
 public class TestImage {
 
@@ -28,8 +23,8 @@ public class TestImage {
         System.load(path);
     }
 
-    private static final String srcPath="Z:\\TEMP";
-    private static final String dstPath="Z:\\code\\";
+    private static final String srcPath="Z:\\code";
+    private static final String dstPath="Z:\\b\\";
 
     @Test//文字
     public void testCropImage2() throws IOException{
@@ -38,7 +33,7 @@ public class TestImage {
         if (file.isDirectory()){
             File[] files = file.listFiles();
             for (int i = 0; i < files.length; i++) {
-                ImageIoUtils.cropImage(files[i].getAbsolutePath(),dstPath+files[i].getName(),120,40,380,45,"bmp","bmp");
+                ImageIoUtils.cropImage(files[i].getAbsolutePath(),dstPath+files[i].getName(),120,40,380,44,"bmp","bmp");
             }
         }
 
@@ -51,7 +46,7 @@ public class TestImage {
         if (file.isDirectory()){
             File[] files = file.listFiles();
             for (int i = 0; i < files.length; i++) {
-                ImageIoUtils.cropImage(files[i].getAbsolutePath(),dstPath+files[i].getName(),150,0,300,50,"bmp","bmp");
+                ImageIoUtils.cropImage(files[i].getAbsolutePath(),dstPath+files[i].getName(),150,0,300,47,"bmp","bmp");
             }
         }
 
@@ -59,10 +54,12 @@ public class TestImage {
 
     @Test
     public void testClearWatermark() throws IOException{
-        //OpenCvUtils.fileToclearWatermark(srcPath,dstPath);
-        String s1="Z:\\TEMP";
-        String s2="Z:\\code\\";
-        OpenCvUtils.fileToclearWatermark(srcPath,dstPath);
+        String srcPath1="Z:\\code";
+        String dstPath1="Z:\\b\\";
+        OpenCvUtils.fileToclearWatermark(srcPath1,dstPath1);
+        String s1="E:\\2018中国软件杯\\Businessinfd\\out\\artifacts\\businessinformationdiscern_jar\\images";
+        String s2="E:\\2018中国软件杯\\Businessinfd\\out\\artifacts\\businessinformationdiscern_jar\\srcdata\\";
+       // OpenCvUtils.fileToclearWatermark(s1,s2);
     }
 
     @Test
@@ -81,22 +78,40 @@ public class TestImage {
 
     }
 
+    //图像的进一出处理测试
     @Test
     public void f2222() throws TesseractException {
-        String src="Z:\\TEMP";
-        String des="Z:\\b\\";
+        String src="Z:\\b";
+        String des="Z:\\c\\";
         File file = new File(src);
         File[] files = file.listFiles();
         for (File file1 : files) {
             Mat mat = Imgcodecs.imread(file1.getAbsolutePath());
             Mat destmat = new Mat(mat.rows(), mat.cols(), CvType.CV_8UC1);
-           // ImageIoUtils.cvtColor(mat,destmat);
-          // ImageIoUtils.threshold(mat,destmat);
-            ImageIoUtils.erode(mat,destmat);
+            //ImageIoUtils.cvtColor(mat,destmat);
+            ImageIoUtils.threshold(mat,destmat);
+            //ImageIoUtils.erode(mat,destmat);
             Imgcodecs.imwrite(des+file1.getName(),destmat);
+        }
+    }
+    //测试进一出图片处理后的效果
+    @Test
+    public void testRecotation() throws TesseractException {
+        String des="Z:\\c";
+        File file = new File(des);
+        Tesseract chi_sim = TesseractUtil.initCurrTesseract("chi_sim");
+        if (file.isDirectory()){
+            File[] files = file.listFiles();
+            for (int i = 0; i < files.length; i++) {
+                File file1 = new File(des + File.separator + i+".bmp");
+                String ocr = chi_sim.doOCR(file1);
+                System.out.println(ocr);
+            }
         }
 
     }
+
+
     @Test
     public void f() throws TesseractException {
         String src="Z:\\code";
