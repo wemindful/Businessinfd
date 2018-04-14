@@ -7,77 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="540d6a2f-2fa2-406e-b9ce-5c4b3272f2fe" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/opencv/x64/opencv_java341.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/chi_sim.traineddata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/chi_sim_vert.traineddata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/chi_tra.traineddata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/chi_tra_vert.traineddata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/configs/api_config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/configs/digits" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/configs/hocr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/eng.traineddata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/osd.traineddata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/pdf.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/tessdata/pdf.ttx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/33png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/44png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/天猫工商信息执照/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/ShopNetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/ShopNetDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BsdMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ImageIoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ImageIoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/OpenCvUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/OpenCvUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestImage.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,11 +32,11 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="OpenCvUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
+            <state relative-caret-position="105">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,8 +48,8 @@
       <file leaf-file-name="TestImage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="101" column="17" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="17" />
+            <state relative-caret-position="757">
+              <caret line="126" column="52" lean-forward="true" selection-start-line="126" selection-start-column="52" selection-end-line="126" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#opencvTo#0;class#TestImage#0" />
@@ -204,6 +134,9 @@
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="216" />
@@ -421,6 +354,8 @@
       <workItem from="1522903304323" duration="25038000" />
       <workItem from="1522935057493" duration="12349000" />
       <workItem from="1522997871158" duration="8455000" />
+      <workItem from="1523717944437" duration="105000" />
+      <workItem from="1523718277761" duration="111000" />
     </task>
     <servers />
   </component>
@@ -457,14 +392,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55485000" />
+    <option name="totallyTimeSpent" value="55701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32800853" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -476,7 +411,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17802817" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18253522" />
       <window_info anchor="right" id="Database" order="7" weight="0.32957748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.24957746" />
@@ -486,6 +421,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39953542" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32800853" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -503,6 +439,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2121">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#opencvTo#0;class#TestImage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -650,10 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-          <folding>
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,9 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/bytedeco/javacpp-presets/opencv/3.4.1-1.4.1/opencv-3.4.1-1.4.1.jar!/org/opencv/imgcodecs/Imgcodecs.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -827,9 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -849,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
+        <state relative-caret-position="105">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -859,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="17" />
+        <state relative-caret-position="757">
+          <caret line="126" column="52" lean-forward="true" selection-start-line="126" selection-start-column="52" selection-end-line="126" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#opencvTo#0;class#TestImage#0" />
