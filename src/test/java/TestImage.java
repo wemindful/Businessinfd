@@ -180,7 +180,7 @@ public class TestImage {
     //File tessDataFolder = LoadLibs.extractTessResources("tessdata"); // Maven build bundles English data
     //instance.setDatapath(tessDataFolder.getParent());
     //如果未将tessdata放在根目录下需要指定绝对路径
-    //instance.setDatapath("E:/2018中国软件杯/businessinformationdiscern/tessdata");
+    //instance.setDatapath("E:/Businessinfd/businessinformationdiscern/tessdata");
     //instance.setLanguage("eng");
     // 这里对图片黑白处理,增强识别率.这里先通过截图,截取图片中需要识别的部分
     //BufferedImage textImage = ImageHelper.convertImageToGrayscale(ImageHelper.getSubImage(panel.image, startX, startY, endX, endY));
