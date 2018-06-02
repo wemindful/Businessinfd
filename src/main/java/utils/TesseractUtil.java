@@ -5,6 +5,7 @@ import net.sourceforge.tess4j.Tesseract;
 public class TesseractUtil {
 
     private volatile static Tesseract singletonTesseract;
+    private final static String path = System.getProperty("user.dir")+"/tessdata";//基础目录
 
     private TesseractUtil(){}
 
@@ -27,6 +28,7 @@ public class TesseractUtil {
     public static Tesseract initCurrTesseract(String languageName){
         Tesseract instance = getInstance();
         instance.setLanguage(languageName);
+        instance.setDatapath(path);
         return instance;
     }
 

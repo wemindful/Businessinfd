@@ -12,6 +12,8 @@ import utils.TesseractUtil;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Vector;
 
 public class BsdMain {
 
@@ -23,8 +25,8 @@ public class BsdMain {
         long startTime = System.currentTimeMillis();
         initEnvironment();
 
-        ArrayList<String> companyId = GetCompanyId();
-        ArrayList<String> companyName = GetCompanyName();
+        Vector<String> companyId = GetCompanyId();
+        Vector<String> companyName = GetCompanyName();
         ArrayList<ShopNetDTO> objects = new ArrayList<>();
         //数据清洗,导出excel
         for (int i = 0; i < companyId.size(); i++) {
@@ -40,7 +42,7 @@ public class BsdMain {
      * 剪切出企业名称,保存.并且清空缓存
      * @return企业名称
      */
-    private static ArrayList<String> GetCompanyName() {
+    private static Vector<String> GetCompanyName() {
         ArrayList<String> list = new ArrayList<>();
         File path = new File(BsdMain.datapath);
         if (path.isDirectory()) {
@@ -66,7 +68,8 @@ public class BsdMain {
 
     }
 
-    private static void Recognition(ArrayList<String> list, Tesseract tesseract, File[] files) {
+    private static void Recognition(Vector<String> list, Tesseract tesseract, File[] files) {
+        Arrays.sort(files);
         for (File file1 : files) {
             String cname = null;
             try {
@@ -87,8 +90,8 @@ public class BsdMain {
      * @throws IOException
      * @throws TesseractException
      */
-    private static ArrayList<String> GetCompanyId()  {
-        ArrayList<String> list = new ArrayList<>();
+    private static Vector<String> GetCompanyId()  {
+        Vector<String> list = new Vector<>();
         File path = new File(BsdMain.datapath);
         if (path.isDirectory()) {
             File[] files = path.listFiles();

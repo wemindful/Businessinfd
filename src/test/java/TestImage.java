@@ -15,6 +15,12 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import static java.util.Arrays.asList;
 
 public class TestImage {
 
@@ -23,7 +29,7 @@ public class TestImage {
         System.load(path);
     }
 
-    private static final String srcPath="Z:\\code";
+    private static final String srcPath="D:\\businessinformationdiscern_jar\\images";
     private static final String dstPath="Z:\\b\\";
 
     @Test//文字
@@ -51,7 +57,31 @@ public class TestImage {
         }
 
     }
+    public List<File> fileSort(List<File> files) {
+        Collections.sort(files, new Comparator<File>() {
+            @Override
+            public int compare(File o1, File o2) {
+                if (o1.isDirectory() && o2.isFile())
+                    return -1;
+                if (o1.isFile() && o2.isDirectory())
+                    return 1;
+                System.out.println(o1.getName());
+                return o1.getName().compareToIgnoreCase(o2.getName());
 
+               // return  Integer.compare(Integer.valueOf(f1),Integer.valueOf(f2));
+            }
+        });
+        return files;
+    }
+    @Test
+    public void orderByName() {
+
+        List<File> files = Arrays.asList(new File("Z:\\b").listFiles());
+        fileSort(files);
+        for (File f : files) {
+            System.out.println(f.getName());
+        }
+    }
     @Test
     public void testClearWatermark() throws IOException{
         String srcPath1="Z:\\code";

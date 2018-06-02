@@ -46,7 +46,7 @@
         <dependency>
                 <groupId>net.sourceforge.tess4j</groupId>
                 <artifactId>tess4j</artifactId>
-                <version>3.4.6</version>
+                <version>4.0.2</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.sun.jna</groupId>
