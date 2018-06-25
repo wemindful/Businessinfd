@@ -5,7 +5,9 @@ import net.sourceforge.tess4j.Tesseract;
 public class TesseractUtil {
 
     private volatile static Tesseract singletonTesseract;
-    private final static String path = System.getProperty("user.dir")+"/tessdata";//基础目录
+    //private final static String path = System.getProperty("user.dir")+"/tessdata";//基础目录
+    //测试目录
+    private final static String path = "D:\\businessinformationdiscern_jar"+"/tessdata";//基础目录
 
     private TesseractUtil(){}
 

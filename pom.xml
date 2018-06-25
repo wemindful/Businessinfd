@@ -24,7 +24,7 @@
                         <archive>
                             <manifest>
                                 <!-- main 函数所在的包名 -->
-                                <mainClass>main.BsdMain</mainClass>
+                                <mainClass>main.App</mainClass>
                                 <addClasspath>true</addClasspath>
                                 <classpathPrefix>lib/</classpathPrefix>
                             </manifest>
