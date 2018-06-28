@@ -1,5 +1,6 @@
 package main;
 
+import FormUI.AppUi;
 import services.discernShopImg;
 
 /**
@@ -11,10 +12,16 @@ import services.discernShopImg;
 public class App {
 
     private final static String path=System.getProperty("user.dir");
-
     public static void main(String[] args) {
-        discernShopImg shopImg = new discernShopImg(path);
-        shopImg.StartDiscern();
+        System.out.println(args[0]);
+        //user 选择执行的方式
+        if(args[0].equals("gui")){
+            new AppUi().setVisible(true);
+        }else if(args[0].equals("console")){
+            discernShopImg shopImg = new discernShopImg("Z:\\textrecotation","console");
+            shopImg.StartDiscern();
+        }
+
     }
 
 }

@@ -1,7 +1,13 @@
 package utils;
 
 import net.sourceforge.tess4j.Tesseract;
-
+/**
+ * @Description:  单例工具类
+ * @Param:
+ * @return:
+ * @Author: Dai.GuoWei
+ * @Date: 2018/6/5
+ */
 public class TesseractUtil {
 
     private volatile static Tesseract singletonTesseract;
@@ -9,7 +15,7 @@ public class TesseractUtil {
     //测试目录
     private final static String path = "D:\\businessinformationdiscern_jar"+"/tessdata";//基础目录
 
-    private TesseractUtil(){}
+   private TesseractUtil(){}
 
     private static Tesseract getInstance() {
         if (singletonTesseract == null) {
