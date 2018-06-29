@@ -41,7 +41,7 @@ public class AppUi extends  JFrame implements ActionListener,TableModelListener 
     private JButton btnInsertData;
     private JButton btnQueryData;
     private static boolean flag=false;
-    public static String basrpath="Z:\\textrecotation";
+    public static String basrpath="D:\\businessinformationdiscern_jar";
 
     /**
      * Launch the application.

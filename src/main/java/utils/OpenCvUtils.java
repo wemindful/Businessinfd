@@ -53,7 +53,8 @@ public class OpenCvUtils {
                   Mat mat1 = clearWatermark(mat);
                   Imgcodecs.imwrite(dstPath+file.getName(),mat1);
                   System.out.println(dstPath+file.getName());
-            } //文件目录不能带有中文
+            }
+            //文件目录不能带有中文
            /* for (int i = 0; i < files.length; i++) {//Z:\TEMP\
                 System.out.println(dstPath+i+".bmp");
                 Mat mat = Imgcodecs.imread(dstPath+i+".bmp");

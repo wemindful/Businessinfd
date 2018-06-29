@@ -18,10 +18,9 @@ public class App {
         if(args[0].equals("gui")){
             new AppUi().setVisible(true);
         }else if(args[0].equals("console")){
-            discernShopImg shopImg = new discernShopImg("Z:\\textrecotation","console");
+            discernShopImg shopImg = new discernShopImg("D:\\businessinformationdiscern_jar","console");
             shopImg.StartDiscern();
         }
-
     }
 
 }

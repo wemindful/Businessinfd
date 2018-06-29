@@ -1,13 +1,16 @@
 package services;
 
+import com.jhlabs.image.ImageUtils;
 import com.xuxueli.poi.excel.ExcelExportUtil;
 import domain.ShopNetDTO;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 import org.apache.commons.io.FileUtils;
+import org.apache.xmlbeans.impl.regex.Match;
 import utils.*;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,6 +18,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @program: businessinformationdiscern
@@ -81,6 +86,7 @@ public class discernShopImg {
         while (true){
             if(exe.isTerminated()){
                 objects = new ArrayList<>();
+                if (companyNamelist.size()==0)return true;
                 //数据清洗,导出excel
                 for (int i = 0; i < companyIdlist.size(); i++) {
                     ShopNetDTO dto = new ShopNetDTO(companyNamelist.get(i), companyIdlist.get(i));
@@ -104,7 +110,7 @@ public class discernShopImg {
             }
         }
         try {
-            FileUtils.cleanDirectory(new File(discernShopImg.basepath + "/images"));//去除水印后图片
+           FileUtils.cleanDirectory(new File(discernShopImg.basepath + "/images"));//去除水印后图片
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -119,6 +125,7 @@ public class discernShopImg {
     private static ArrayList<String> GetCompanyName() {
         ArrayList<String> list = new ArrayList<>();
         File path = new File(discernShopImg.datapath);
+
         if (path.isDirectory()) {
             File[] files = path.listFiles();
             for (int i = 0; i < files.length; i++) {
@@ -130,8 +137,6 @@ public class discernShopImg {
                 }
             }
         }
-        //测试
-        //Tesseract tesseract = TesseractUtil.initCurrTesseract("chi_sim");
         Tesseract tesseract= new TesseractMul("chi_sim").getCurrTesseract();
         File[] files = new File(temppath).listFiles();
         if (files == null) return new ArrayList<>();
@@ -147,7 +152,6 @@ public class discernShopImg {
             e.printStackTrace();
         }
         return list;
-
     }
 
     /**
@@ -174,7 +178,6 @@ public class discernShopImg {
                 return Integer.compare(f, f2);
             }
         });
-
         if (Langflag.equals("eng")) {
             for (File file1 : filelist) {
                 String cname = null;
@@ -184,6 +187,9 @@ public class discernShopImg {
                 } catch (TesseractException e) {
                     e.printStackTrace();
                     System.out.println("识别失败");
+                }
+                if(cname.length()<"91370100054".length()||cname.equals("")){
+                      file1.delete();continue;
                 }
                 //因为 Tesseract  识别 ）出现失误 所以进行手动矫正
                 if (cname != null && cname.contains(")")) {
@@ -202,6 +208,13 @@ public class discernShopImg {
                 } catch (TesseractException e) {
                     e.printStackTrace();
                     System.out.println("识别失败");
+                }
+                // trim（）无法去空格
+                cname=cname.replaceAll("\n","");
+                cname=cname.replaceAll(" ","");
+                if(cname.length()<"广东骆驼服饰有限公".length()){
+                    file.delete();continue;
+
                 }
                 //因为 出现“：” 为了不降低正确率 那么手动处理：
                 if (cname != null && cname.contains(":") || cname.contains("ˇ") || cname.contains(".")) {
@@ -258,7 +271,6 @@ public class discernShopImg {
                 }
             }
         }
-        //Tesseract tesseract = TesseractUtil.initCurrTesseract("eng");
         Tesseract tesseract= new TesseractMul("eng").getCurrTesseract();
         File[] files = new File(tempcpath).listFiles();
         //根据环境选择数据流方式
@@ -289,7 +301,7 @@ public class discernShopImg {
             tempc.mkdir();
             xlsx.delete();
         }
-         FileSuffixUtils.clearIllegalFile(basepath);
+        FileSuffixUtils.clearIllegalFile(basepath);
         //FileSuffixUtils.clearIllegalImage(basepath);
         // 转换为24rgb 格式
         FileUtils.cleanDirectory(new File(discernShopImg.basepath + "/data"));//data 转变格式后图片
@@ -303,8 +315,9 @@ public class discernShopImg {
             }
         }
         //去除水印
-        OpenCvUtils.fileToclearWatermark(discernShopImg.basepath + "/images", discernShopImg.basepath + "\\data\\");
+        OpenCvUtils.fileToclearWatermark(discernShopImg.basepath + "/images", discernShopImg.basepath + "/data/");
         FileUtils.cleanDirectory(temp);
+        FileUtils.cleanDirectory(tempc);
         FileUtils.cleanDirectory(new File(discernShopImg.basepath + "/images"));
     }
 

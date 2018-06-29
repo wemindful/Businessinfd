@@ -8,6 +8,7 @@ import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import utils.ImageIoUtils;
 import utils.OpenCvUtils;
+import utils.RedressUtils;
 import utils.TesseractUtil;
 
 import javax.imageio.ImageIO;
@@ -19,6 +20,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import static java.util.Arrays.asList;
 
@@ -141,6 +143,17 @@ public class TestImage {
 
     }
 
+    @Test
+    public void   f2(){
+        System.out.println(RedressUtils.digitalRedress("123aaaa中国"));
+        String str="迅 销 ( 中 国 ) 商 贸 有 限 公 司";
+        str=str.replaceAll("\n","");
+        str=str.replaceAll(" ","");
+        str=str.trim();
+        if(!RedressUtils.characterRedress(str)){
+            System.out.println("sss");
+        }
+    }
 
     @Test
     public void f() throws TesseractException {

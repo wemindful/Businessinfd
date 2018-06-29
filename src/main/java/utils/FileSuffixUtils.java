@@ -27,8 +27,10 @@ public class FileSuffixUtils {
      * @return
      */
     public static boolean clearIllegalFile(String path) {
+        randomFileName(path);
       //  System.out.println(path+File.separator+"天猫工商信息执照");
         File file = new File(path+File.separator+"天猫工商信息执照");
+        System.out.println(file.getPath());
         for (File file1 : file.listFiles()) {
             String filename = FilenameUtils.getExtension(file1.getPath());
             if(filename!=null&&!filename.equals("png")){
@@ -41,13 +43,27 @@ public class FileSuffixUtils {
             }
         }
         int fileCode=0;
-        for (File file2 : new File(path).listFiles()) {
-            file2.renameTo(new File(path+File.separator+"天猫工商信息执照"+File.separator+fileCode+".png"));
+        for (File file2 : new File(path+File.separator+"天猫工商信息执照").listFiles()) {
+            File f=new File(path+File.separator+"天猫工商信息执照"+File.separator+fileCode+".png");
+            file2.renameTo(f);
+            //System.out.println(new File(path+File.separator+"天猫工商信息执照"+File.separator+fileCode+".png").getPath());
            // System.out.println(new File(path+"/"+fileCode+".png"));
             ++fileCode;
         }
         return true;
     }
+
+    /**
+     *  随机命名解决java renameTo 方法缺陷
+     * @param path 路径
+     */
+    private static void randomFileName(String path){
+        File file = new File(path+File.separator+"天猫工商信息执照");
+        for (File file1 : file.listFiles()) {
+            file1.renameTo(new File(path+File.separator+"天猫工商信息执照"+File.separator+Math.round(Math.random()*1000)+".png"));
+        }
+    }
+
 
     /**
      * 去除非法尺寸图片
@@ -67,7 +83,8 @@ public class FileSuffixUtils {
         return true;
     }
     public static void main(String[] args) {
-        clearIllegalFile("Z:\\textrecotation");
+        //randomFileName("Z:\\");
+        clearIllegalFile("Z:\\");
     }
 
 }
