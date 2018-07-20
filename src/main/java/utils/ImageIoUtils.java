@@ -167,27 +167,25 @@ public class ImageIoUtils {
     }
 
     /**
-     * Mat转换成BufferedImage
-     *
-     * @param matrix        要转换的Mat
-     * @param fileExtension 格式为 ".jpg", ".png", etc
-     * @return
+     * 转换图片格式
+     * @param srcPath
+     * @param dstFormat
+     * @return TYPE_INT_RGB格式图片
      */
-    public static BufferedImage Mat2BufImg(Mat matrix, String fileExtension) {
-        // convert the matrix into a matrix of bytes appropriate for
-        // this file extension
-        MatOfByte mob = new MatOfByte();
-        Imgcodecs.imencode(fileExtension, matrix, mob);
-        // convert the "matrix of bytes" into a byte array
-        byte[] byteArray = mob.toArray();
-        BufferedImage bufImage = null;
+    public static BufferedImage convertImageFormat(File srcPath, String dstFormat){
+
+        BufferedImage bufferedImage;
+        BufferedImage newBufferedImage=null;
         try {
-            InputStream in = new ByteArrayInputStream(byteArray);
-            bufImage = ImageIO.read(in);
-        } catch (Exception e) {
+            bufferedImage = ImageIO.read(srcPath);
+            newBufferedImage = new BufferedImage(bufferedImage.getWidth(),
+                    bufferedImage.getHeight(), BufferedImage.TYPE_INT_RGB);
+            newBufferedImage.createGraphics().drawImage(bufferedImage, 0, 0, Color.WHITE, null);
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        return bufImage;
+        return newBufferedImage;
+
     }
 
     public static void cvtColor(Mat srcmat, Mat destmat) {

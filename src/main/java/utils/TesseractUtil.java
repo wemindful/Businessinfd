@@ -1,5 +1,7 @@
 package utils;
 
+import main.AllConfig;
+import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.Tesseract;
 /**
  * @Description:  单例工具类
@@ -11,9 +13,6 @@ import net.sourceforge.tess4j.Tesseract;
 public class TesseractUtil {
 
     private volatile static Tesseract singletonTesseract;
-    //private final static String path = System.getProperty("user.dir")+"/tessdata";//基础目录
-    //测试目录
-    private final static String path = "D:\\businessinformationdiscern_jar"+"/tessdata";//基础目录
 
    private TesseractUtil(){}
 
@@ -36,7 +35,7 @@ public class TesseractUtil {
     public static Tesseract initCurrTesseract(String languageName){
         Tesseract instance = getInstance();
         instance.setLanguage(languageName);
-        instance.setDatapath(path);
+        instance.setDatapath(AllConfig.tessdata);
         return instance;
     }
 

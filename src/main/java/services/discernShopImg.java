@@ -1,16 +1,16 @@
 package services;
 
-import com.jhlabs.image.ImageUtils;
 import com.xuxueli.poi.excel.ExcelExportUtil;
 import domain.ShopNetDTO;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 import org.apache.commons.io.FileUtils;
-import org.apache.xmlbeans.impl.regex.Match;
-import utils.*;
+import utils.FileSuffixUtils;
+import utils.ImageIoUtils;
+import utils.OpenCvUtils;
+import utils.TesseractMul;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,14 +18,13 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * @program: businessinformationdiscern
  * @description: 识别图片信息的包装类
  * @author: Mr.Dai
  * @create: 2018-06-25 16:23
+ * @deprecated
  **/
 public class discernShopImg {
 
@@ -130,7 +129,7 @@ public class discernShopImg {
             File[] files = path.listFiles();
             for (int i = 0; i < files.length; i++) {
                 try {
-                    ImageIoUtils.cropImage(files[i].getAbsolutePath(), temppath + files[i].getName(), 115, 40, 380, 45, "bmp", "bmp");
+                    ImageIoUtils.cropImage(files[i].getAbsolutePath(), temppath + files[i].getName(), 115, 40, 385, 45, "bmp", "bmp");
                 } catch (IOException e) {
                     e.printStackTrace();
                     System.out.println("裁剪失败");
@@ -173,8 +172,8 @@ public class discernShopImg {
                     return -1;
                 if (o1.isFile() && o2.isDirectory())
                     return 1;
-                Integer f = fequals(o1.getName());
-                Integer f2 = fequals(o2.getName());
+                Integer f = FileSuffixUtils.fequals(o1.getName());
+                Integer f2 = FileSuffixUtils.fequals(o2.getName());
                 return Integer.compare(f, f2);
             }
         });
@@ -228,28 +227,6 @@ public class discernShopImg {
             }
         }
     }
-
-    /**
-     * 按照指定办法读取文件
-     *
-     * @param filename
-     * @return
-     */
-    private static Integer fequals(String filename) {
-        int x = filename.indexOf(".");
-        String string2 = filename.substring(0, x);
-        char[] cs = string2.toCharArray();
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < cs.length; i++) {
-            if (Character.isDigit(cs[i])) {
-                builder.append(cs[i]);
-            }
-        }
-        return Integer.parseInt(builder.toString());
-
-    }
-
-
     /**
      * //剪切出企业编号,保存.并且清空缓存
      *
@@ -318,7 +295,7 @@ public class discernShopImg {
         OpenCvUtils.fileToclearWatermark(discernShopImg.basepath + "/images", discernShopImg.basepath + "/data/");
         FileUtils.cleanDirectory(temp);
         FileUtils.cleanDirectory(tempc);
-        FileUtils.cleanDirectory(new File(discernShopImg.basepath + "/images"));
+        //FileUtils.cleanDirectory(new File(discernShopImg.basepath + "/images"));
     }
 
     public static ArrayList<String> getCompanyNamelist() {

@@ -1,5 +1,6 @@
 package utils;
 
+import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.Tesseract;
 
 /**
@@ -27,6 +28,7 @@ public class TesseractMul {
         Tesseract tesseract=new Tesseract();
         tesseract.setLanguage(Language);
         tesseract.setDatapath(path);
+        tesseract.setOcrEngineMode(ITessAPI.TessOcrEngineMode.OEM_LSTM_ONLY);
         return tesseract;
     }
 

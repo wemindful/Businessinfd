@@ -1,6 +1,7 @@
 package main;
 
 import FormUI.AppUi;
+import services.dataProcessing;
 import services.discernShopImg;
 
 /**
@@ -16,10 +17,12 @@ public class App {
         System.out.println(args[0]);
         //user 选择执行的方式
         if(args[0].equals("gui")){
-            new AppUi().setVisible(true);
+            new AppUi(path).setVisible(true);
         }else if(args[0].equals("console")){
-            discernShopImg shopImg = new discernShopImg("D:\\businessinformationdiscern_jar","console");
-            shopImg.StartDiscern();
+            //discernShopImg shopImg = new discernShopImg("D:\\businessinformationdiscern_jar","console");
+            //shopImg.StartDiscern();
+            dataProcessing pro=new dataProcessing();
+            pro.finalProcess();
         }
     }
 

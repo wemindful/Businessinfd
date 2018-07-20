@@ -50,7 +50,7 @@ public class AppUi extends  JFrame implements ActionListener,TableModelListener 
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    AppUi frame = new AppUi();
+                    AppUi frame = new AppUi(basrpath);
                     frame.setVisible(true);
                     // table大小变化
                     frame.addComponentListener(new ComponentAdapter() {
@@ -71,7 +71,8 @@ public class AppUi extends  JFrame implements ActionListener,TableModelListener 
     /**
      * Create the frame.
      */
-    public AppUi() {
+    public AppUi(String basepath) {
+        AppUi.basrpath=basepath;
         this.setTitle("网店工商信息图片文字提取");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 876, 585);
