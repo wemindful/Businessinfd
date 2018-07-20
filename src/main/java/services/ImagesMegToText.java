@@ -24,7 +24,7 @@ import java.util.logging.Logger;
  **/
 public class ImagesMegToText {
 
-    //缓存数据
+    //缓存工商原始数据
     private  ArrayList<String> oneCompanyData = new ArrayList<>();
     //private CopyOnWriteArrayList<String> oneCompanyData=new CopyOnWriteArrayList();
 
