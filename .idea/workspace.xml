@@ -6,47 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16fe5ca6-2f3d-4eef-85db-23d6a91fa5be" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/AllConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/DiscernALLImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/ImagesMegToText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/dataProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ClearWaterImgesInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ImageInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestALLImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDiscernALLImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataProcessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/businessinformationdiscern_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/businessinformationdiscern_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/businessinformationdiscern.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/businessinformationdiscern_jar/businessinformationdiscern.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FormUI/AppUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FormUI/AppUi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/ShopNetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/ShopNetDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/discernShopImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/discernShopImg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileSuffixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileSuffixUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ImageIoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ImageIoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/OpenCvUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TesseractMul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TesseractMul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/TesseractUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TesseractUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FormUI/AppUi$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FormUI/AppUi$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FormUI/AppUi$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FormUI/AppUi$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FormUI/AppUi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FormUI/AppUi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/ShopNetDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/ShopNetDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/discernShopImg$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/discernShopImg$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/discernShopImg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/discernShopImg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileSuffixUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileSuffixUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/ImageIoUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ImageIoUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/OpenCvUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/OpenCvUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/TesseractMul.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/TesseractMul.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/TesseractUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/TesseractUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tessdata/chi_sim.traineddata" beforeDir="false" afterPath="$PROJECT_DIR$/tessdata/chi_sim.traineddata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tessdata/chi_tra.traineddata" beforeDir="false" afterPath="$PROJECT_DIR$/tessdata/chi_tra.traineddata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tessdata/eng.traineddata" beforeDir="false" afterPath="$PROJECT_DIR$/tessdata/eng.traineddata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tessdata/osd.traineddata" beforeDir="false" afterPath="$PROJECT_DIR$/tessdata/osd.traineddata" afterDir="false" />
-    </list>
+    <list default="true" id="16fe5ca6-2f3d-4eef-85db-23d6a91fa5be" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,11 +28,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="546">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -80,7 +37,7 @@
       <file leaf-file-name="dataProcessing.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/dataProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
+            <state relative-caret-position="913">
               <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,42 +49,8 @@
       <file leaf-file-name="ImagesMegToText.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/ImagesMegToText.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
+            <state relative-caret-position="147">
               <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestALLImg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestALLImg.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2829#2830#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/AllConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiscernALLImg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/DiscernALLImg.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,7 +126,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="216" />
     <option name="y" value="14" />
     <option name="width" value="1496" />
@@ -500,10 +423,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94528000" />
+    <option name="totallyTimeSpent" value="94553000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="85" y="-8" width="1843" height="1096" extended-state="7" />
+    <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -528,12 +451,34 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" sideWeight="0.50158733" side_tool="true" weight="0.23380281" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Structure" order="1" sideWeight="0.50158733" side_tool="true" weight="0.23380281" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290735" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="5" sideWeight="0.50158733" side_tool="true" weight="0.23380281" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3283582" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984127" visible="true" weight="0.24056338" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,9 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -910,11 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="546">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -957,7 +896,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/dataProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
+        <state relative-caret-position="913">
           <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -967,7 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/ImagesMegToText.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
+        <state relative-caret-position="147">
           <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
