@@ -1,7 +1,9 @@
 package utils;
 
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.TesseractException;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.core.MatOfByte;
 import org.opencv.core.Size;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
@@ -12,18 +14,20 @@ import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ImageIoUtils {
-    static {
-        //System.load(Core.NATIVE_LIBRARY_NAME);
-        String path = System.getProperty("user.dir") + "\\opencv\\x64\\opencv_java341.dll";
-        System.load(path);
-    }
+
+        static{
+            System.load(SystemSetting.loadLib());
+        }
 
     /**
      * 对图片裁剪，并把裁剪新图片保存
@@ -136,19 +140,6 @@ public class ImageIoUtils {
      * @return
      */
     public static boolean convertImageFormat(File srcPath, File toPath, String dstFormat) {
-        /*//BufferedInputStream stream = new BufferedInputStream(inputStream);
-        FileOutputStream outputStream = new FileOutputStream(toPath+File.separator+dstName+"."+dstFormat);
-        BufferedImage image = ImageIO.read(new File(srcPath));
-        ImageIO.write(image,srcFomat,outputStream);
-        outputStream.flush();*/
-        //BufferedImage image = ImageIO.read(new File(srcPath));
-        /*if(!ImageIO.write(image, dstFormat, new File(toPath+File.separator+dstName+"."+dstFormat))){
-            BufferedImage img = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_INT_RGB);
-            img.getGraphics().drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-            return ImageIO.write(img, dstFormat, new File(toPath+File.separator+dstName+"."+dstFormat));
-        }
-        return true;*/
-
         BufferedImage bufferedImage;
         try {
             /*String pathName = srcPath.getName();
@@ -197,10 +188,23 @@ public class ImageIoUtils {
         Imgproc.threshold(srcmat, destmat, 150, 255, Imgproc.THRESH_BINARY);
     }
 
-    public static void erode(Mat srcmat, Mat destmat) {
+    /**
+     * 腐蚀增强
+     * @param srcmat
+     * @param fileextend 文件扩展名 .bmp
+     */
+    public static BufferedImage erodeToBufferImage(BufferedImage srcimg,String fileextend) {
+
+        Mat srcmat=OpenCvUtils.BufImg2Mat(srcimg,BufferedImage.TYPE_INT_RGB, CvType.CV_8U);
+
         //定义腐蚀块的大小
         Mat element = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(2, 2));
+
+        Mat destmat=new Mat();
+
         Imgproc.erode(srcmat, destmat, element);
+        BufferedImage img= OpenCvUtils.Mat2BufImg(destmat,fileextend);
+        return img;
     }
 
 

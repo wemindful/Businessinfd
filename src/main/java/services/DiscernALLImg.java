@@ -25,14 +25,16 @@ public class DiscernALLImg {
      */
     public  Map<Integer,BufferedImage> imgFixedProcess(){
         initEnvironment();
-        File root = new File(DiscernALLImg.basepath + "/天猫工商信息执照");
+        File root = new File(DiscernALLImg.basepath + File.separator+"天猫工商信息执照");
         Map<Integer,BufferedImage> convertImgMap=new HashMap<>();
         if (root.isDirectory()) {
             File[] files = root.listFiles();
             for (int i = 0; i < files.length; i++) {
                 BufferedImage convertimg=ImageIoUtils.convertImageFormat(files[i],"bmp");
                 BufferedImage clearWaterImg=ClearWaterImgesInit.fileToclearWatermark(convertimg);
-                convertImgMap.put(i,clearWaterImg);
+                //
+                BufferedImage  strongImg=ImageIoUtils.erodeToBufferImage(clearWaterImg,".bmp");
+                convertImgMap.put(i,strongImg);
             }
         }
         return convertImgMap;

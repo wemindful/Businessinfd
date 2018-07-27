@@ -1,7 +1,11 @@
 package utils;
 
+import main.AllConfig;
 import net.sourceforge.tess4j.ITessAPI;
 import net.sourceforge.tess4j.Tesseract;
+import sun.security.krb5.Config;
+
+import java.io.File;
 
 /**
  * @program: businessinformationdiscern
@@ -11,9 +15,9 @@ import net.sourceforge.tess4j.Tesseract;
  **/
 public class TesseractMul {
 
-    //private final static String path = System.getProperty("user.dir")+"/tessdata";//基础目录
+     private final static String path = AllConfig.tessdata; //+File.separator+"tessdata";//基础目录
     //测试目录
-    private final static String path = "D:\\businessinformationdiscern_jar"+"/tessdata";//基础目录
+    // private final static String path = "D:\\businessdiscern\\businessinformationdiscern_jar\\tessdata";//基础目录
 
     private String Language="";
     public TesseractMul(String lang){

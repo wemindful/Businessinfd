@@ -3,6 +3,8 @@ import net.sourceforge.tess4j.TesseractException;
 import net.sourceforge.tess4j.util.ImageHelper;
 import net.sourceforge.tess4j.util.ImageIOHelper;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import services.DiscernALLImg;
 import services.ImagesMegToText;
 import sun.net.www.content.image.png;
@@ -22,6 +24,17 @@ import java.util.Map;
  **/
 public class TestALLImg {
 
+
+    private Logger logger=LoggerFactory.getLogger(TestALLImg.class);
+
+    @Test
+    public void testLogger(){
+        logger.info("sss");
+    }
+
+    /*
+     二值化处理
+     */
     @Test
     public void test1() throws IOException, TesseractException {
         long stime=System.currentTimeMillis();
@@ -93,10 +106,15 @@ public class TestALLImg {
         new ImagesMegToText().StartDiscern();
     }
 
+    /**
+     *  图片爬去验证码测试
+     * @throws TesseractException
+     * @throws IOException
+     */
     @Test
     public void testVCode() throws TesseractException, IOException {
         long stime=System.currentTimeMillis();
-        BufferedImage img=ImageIO.read(new FileInputStream(new File("Z:\\yanzhengma\\3.jpg")));
+        BufferedImage img=ImageIO.read(new FileInputStream(new File("C:\\Users\\DGW-PC\\Desktop\\天猫验证码\\验证码2\\5.jpg")));
         BufferedImage binaryimage=ImageHelper.convertImageToBinary(img);
         Tesseract tesseract= new TesseractMul("eng").getCurrTesseract();
         String str=tesseract.doOCR(binaryimage);

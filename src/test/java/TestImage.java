@@ -86,8 +86,8 @@ public class TestImage {
     }
     @Test
     public void testClearWatermark() throws IOException{
-        String srcPath1="Z:\\code";
-        String dstPath1="Z:\\b\\";
+        String srcPath1="Z:\\转换格式后";
+        String dstPath1="Z:\\去除水印\\";
         OpenCvUtils.fileToclearWatermark(srcPath1,dstPath1);
         String s1="E:\\2018中国软件杯\\Businessinfd\\out\\artifacts\\businessinformationdiscern_jar\\images";
         String s2="E:\\2018中国软件杯\\Businessinfd\\out\\artifacts\\businessinformationdiscern_jar\\srcdata\\";
@@ -97,7 +97,7 @@ public class TestImage {
     @Test
     public void TestConvertImageFormat() throws IOException {
         String src="Z:\\天猫工商信息执照";
-        String dst="Z:\\TEMP";//Z:\天猫工商信息执照
+        String dst="Z:\\转换格式后";//Z:\天猫工商信息执照
 
         File file = new File(src);
         if (file.isDirectory()){

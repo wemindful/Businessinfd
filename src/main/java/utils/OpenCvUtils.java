@@ -20,10 +20,7 @@ import java.util.Map;
 public class OpenCvUtils {
 
     static{
-        //System.load(Core.NATIVE_LIBRARY_NAME);
-        //System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        String path=System.getProperty("user.dir")+ "\\opencv\\x64\\opencv_java341.dll";
-        System.load(path);
+        System.load(SystemSetting.loadLib());
     }
 
     /**
@@ -128,7 +125,7 @@ public class OpenCvUtils {
      * @param imgType
      *            bufferedImage的类型 如 BufferedImage.TYPE_3BYTE_BGR
      * @param matType
-     *            转换成mat的type 如 CvType.CV_8UC3
+     *            转换成mat的type 如 CvType.CV_8U
      */
     public static Mat BufImg2Mat (BufferedImage original, int imgType, int matType) {
         if (original == null) {
