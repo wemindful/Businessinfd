@@ -97,4 +97,4 @@ OCR处理 | tesseract4.0 |
  **MIT** 
 
 #### 请我喝一杯茶
-![PswvEq.png](https://s1.ax1x.com/2018/08/08/PswvEq.png)
+[![PyPcK1.png](https://s1.ax1x.com/2018/08/08/PyPcK1.png)](https://imgchr.com/i/PyPcK1)
