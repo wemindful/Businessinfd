@@ -11,7 +11,7 @@ import java.awt.image.*;
  * @author: Mr.Dai
  * @create: 2018-07-19 15:23
  **/
-public class ClearWaterImgesInit {
+public class ClearWaterImgesInit {   
 
     BufferedImage image;
     private int iw, ih;
